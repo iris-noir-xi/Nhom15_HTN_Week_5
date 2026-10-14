@@ -1,0 +1,429 @@
+ARM GAS  /tmp/ccQGfAq3.s 			page 1
+
+
+   1              		.cpu cortex-m3
+   2              		.arch armv7-m
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.file	"stubs.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.file 1 "Src/stubs.c"
+  18              		.section	.text._close,"ax",%progbits
+  19              		.align	1
+  20              		.global	_close
+  21              		.syntax unified
+  22              		.thumb
+  23              		.thumb_func
+  25              	_close:
+  26              	.LVL0:
+  27              	.LFB0:
+   1:Src/stubs.c   **** #include <stdint.h>
+   2:Src/stubs.c   **** #include <sys/types.h>
+   3:Src/stubs.c   **** 
+   4:Src/stubs.c   **** // Định nghĩa kiểu dữ liệu FreeRTOS giả lập để biên dịch
+   5:Src/stubs.c   **** typedef void* QueueHandle_t;
+   6:Src/stubs.c   **** typedef uint32_t TickType_t;
+   7:Src/stubs.c   **** typedef void* TaskHandle_t;
+   8:Src/stubs.c   **** typedef uint32_t UBaseType_t;
+   9:Src/stubs.c   **** 
+  10:Src/stubs.c   **** int _close(int file) { (void)file; return -1; }
+  28              		.loc 1 10 22 view -0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32              		@ link register save eliminated.
+  33              		.loc 1 10 24 view .LVU1
+  34              		.loc 1 10 36 view .LVU2
+  35              		.loc 1 10 47 is_stmt 0 view .LVU3
+  36 0000 4FF0FF30 		mov	r0, #-1
+  37              	.LVL1:
+  38              		.loc 1 10 47 view .LVU4
+  39 0004 7047     		bx	lr
+  40              		.cfi_endproc
+  41              	.LFE0:
+  43              		.section	.text._lseek,"ax",%progbits
+  44              		.align	1
+  45              		.global	_lseek
+  46              		.syntax unified
+  47              		.thumb
+  48              		.thumb_func
+  50              	_lseek:
+ARM GAS  /tmp/ccQGfAq3.s 			page 2
+
+
+  51              	.LVL2:
+  52              	.LFB1:
+  11:Src/stubs.c   **** int _lseek(int file, int ptr, int dir) { (void)file; (void)ptr; (void)dir; return 0; }
+  53              		.loc 1 11 40 is_stmt 1 view -0
+  54              		.cfi_startproc
+  55              		@ args = 0, pretend = 0, frame = 0
+  56              		@ frame_needed = 0, uses_anonymous_args = 0
+  57              		@ link register save eliminated.
+  58              		.loc 1 11 42 view .LVU6
+  59              		.loc 1 11 54 view .LVU7
+  60              		.loc 1 11 65 view .LVU8
+  61              		.loc 1 11 76 view .LVU9
+  62              		.loc 1 11 86 is_stmt 0 view .LVU10
+  63 0000 0020     		movs	r0, #0
+  64              	.LVL3:
+  65              		.loc 1 11 86 view .LVU11
+  66 0002 7047     		bx	lr
+  67              		.cfi_endproc
+  68              	.LFE1:
+  70              		.section	.text._fstat,"ax",%progbits
+  71              		.align	1
+  72              		.global	_fstat
+  73              		.syntax unified
+  74              		.thumb
+  75              		.thumb_func
+  77              	_fstat:
+  78              	.LVL4:
+  79              	.LFB2:
+  12:Src/stubs.c   **** int _fstat(int file, void *st) { (void)file; (void)st; return 1; }
+  80              		.loc 1 12 32 is_stmt 1 view -0
+  81              		.cfi_startproc
+  82              		@ args = 0, pretend = 0, frame = 0
+  83              		@ frame_needed = 0, uses_anonymous_args = 0
+  84              		@ link register save eliminated.
+  85              		.loc 1 12 34 view .LVU13
+  86              		.loc 1 12 46 view .LVU14
+  87              		.loc 1 12 56 view .LVU15
+  88              		.loc 1 12 66 is_stmt 0 view .LVU16
+  89 0000 0120     		movs	r0, #1
+  90              	.LVL5:
+  91              		.loc 1 12 66 view .LVU17
+  92 0002 7047     		bx	lr
+  93              		.cfi_endproc
+  94              	.LFE2:
+  96              		.section	.text._isatty,"ax",%progbits
+  97              		.align	1
+  98              		.global	_isatty
+  99              		.syntax unified
+ 100              		.thumb
+ 101              		.thumb_func
+ 103              	_isatty:
+ 104              	.LVL6:
+ 105              	.LFB3:
+  13:Src/stubs.c   **** int _isatty(int file) { (void)file; return 1; }
+ 106              		.loc 1 13 23 is_stmt 1 view -0
+ 107              		.cfi_startproc
+ 108              		@ args = 0, pretend = 0, frame = 0
+ARM GAS  /tmp/ccQGfAq3.s 			page 3
+
+
+ 109              		@ frame_needed = 0, uses_anonymous_args = 0
+ 110              		@ link register save eliminated.
+ 111              		.loc 1 13 25 view .LVU19
+ 112              		.loc 1 13 37 view .LVU20
+ 113              		.loc 1 13 47 is_stmt 0 view .LVU21
+ 114 0000 0120     		movs	r0, #1
+ 115              	.LVL7:
+ 116              		.loc 1 13 47 view .LVU22
+ 117 0002 7047     		bx	lr
+ 118              		.cfi_endproc
+ 119              	.LFE3:
+ 121              		.section	.text._exit,"ax",%progbits
+ 122              		.align	1
+ 123              		.global	_exit
+ 124              		.syntax unified
+ 125              		.thumb
+ 126              		.thumb_func
+ 128              	_exit:
+ 129              	.LFB4:
+  14:Src/stubs.c   **** void _exit(int status) { while(1); }
+ 130              		.loc 1 14 24 is_stmt 1 view -0
+ 131              		.cfi_startproc
+ 132              		@ Volatile: function does not return.
+ 133              		@ args = 0, pretend = 0, frame = 0
+ 134              		@ frame_needed = 0, uses_anonymous_args = 0
+ 135              		@ link register save eliminated.
+ 136              	.LVL8:
+ 137              	.L6:
+ 138              		.loc 1 14 26 view .LVU24
+ 139              		.loc 1 14 31 view .LVU25
+ 140 0000 FEE7     		b	.L6
+ 141              		.cfi_endproc
+ 142              	.LFE4:
+ 144              		.section	.text._sbrk,"ax",%progbits
+ 145              		.align	1
+ 146              		.global	_sbrk
+ 147              		.syntax unified
+ 148              		.thumb
+ 149              		.thumb_func
+ 151              	_sbrk:
+ 152              	.LVL9:
+ 153              	.LFB5:
+  15:Src/stubs.c   **** 
+  16:Src/stubs.c   **** caddr_t _sbrk(int incr) {
+ 154              		.loc 1 16 25 view -0
+ 155              		.cfi_startproc
+ 156              		@ args = 0, pretend = 0, frame = 0
+ 157              		@ frame_needed = 0, uses_anonymous_args = 0
+ 158              		@ link register save eliminated.
+ 159              		.loc 1 16 25 is_stmt 0 view .LVU27
+ 160 0000 0346     		mov	r3, r0
+  17:Src/stubs.c   ****     extern char end asm("end");
+ 161              		.loc 1 17 5 is_stmt 1 view .LVU28
+  18:Src/stubs.c   ****     static char *heap_end;
+ 162              		.loc 1 18 5 view .LVU29
+  19:Src/stubs.c   ****     char *prev_heap_end;
+ 163              		.loc 1 19 5 view .LVU30
+ARM GAS  /tmp/ccQGfAq3.s 			page 4
+
+
+  20:Src/stubs.c   ****     if (heap_end == 0) {
+ 164              		.loc 1 20 5 view .LVU31
+ 165              		.loc 1 20 18 is_stmt 0 view .LVU32
+ 166 0002 064A     		ldr	r2, .L10
+ 167 0004 1268     		ldr	r2, [r2]
+ 168              		.loc 1 20 8 view .LVU33
+ 169 0006 22B1     		cbz	r2, .L9
+ 170              	.L8:
+  21:Src/stubs.c   ****         heap_end = &end;
+  22:Src/stubs.c   ****     }
+  23:Src/stubs.c   ****     prev_heap_end = heap_end;
+ 171              		.loc 1 23 5 is_stmt 1 view .LVU34
+ 172              		.loc 1 23 19 is_stmt 0 view .LVU35
+ 173 0008 044A     		ldr	r2, .L10
+ 174 000a 1068     		ldr	r0, [r2]
+ 175              	.LVL10:
+  24:Src/stubs.c   ****     heap_end += incr;
+ 176              		.loc 1 24 5 is_stmt 1 view .LVU36
+ 177              		.loc 1 24 14 is_stmt 0 view .LVU37
+ 178 000c 0344     		add	r3, r3, r0
+ 179              	.LVL11:
+ 180              		.loc 1 24 14 view .LVU38
+ 181 000e 1360     		str	r3, [r2]
+  25:Src/stubs.c   ****     return (caddr_t)prev_heap_end;
+ 182              		.loc 1 25 5 is_stmt 1 view .LVU39
+  26:Src/stubs.c   **** }
+ 183              		.loc 1 26 1 is_stmt 0 view .LVU40
+ 184 0010 7047     		bx	lr
+ 185              	.LVL12:
+ 186              	.L9:
+  21:Src/stubs.c   ****     }
+ 187              		.loc 1 21 9 is_stmt 1 view .LVU41
+  21:Src/stubs.c   ****     }
+ 188              		.loc 1 21 18 is_stmt 0 view .LVU42
+ 189 0012 024A     		ldr	r2, .L10
+ 190 0014 0249     		ldr	r1, .L10+4
+ 191 0016 1160     		str	r1, [r2]
+ 192 0018 F6E7     		b	.L8
+ 193              	.L11:
+ 194 001a 00BF     		.align	2
+ 195              	.L10:
+ 196 001c 00000000 		.word	heap_end.0
+ 197 0020 00000000 		.word	end
+ 198              		.cfi_endproc
+ 199              	.LFE5:
+ 201              		.section	.text.xQueueCreate,"ax",%progbits
+ 202              		.align	1
+ 203              		.global	xQueueCreate
+ 204              		.syntax unified
+ 205              		.thumb
+ 206              		.thumb_func
+ 208              	xQueueCreate:
+ 209              	.LVL13:
+ 210              	.LFB6:
+  27:Src/stubs.c   **** 
+  28:Src/stubs.c   **** // Các hàm stubs cho FreeRTOS Queue & Task
+  29:Src/stubs.c   **** QueueHandle_t xQueueCreate(UBaseType_t uxQueueLength, UBaseType_t uxItemSize) {
+ARM GAS  /tmp/ccQGfAq3.s 			page 5
+
+
+ 211              		.loc 1 29 79 is_stmt 1 view -0
+ 212              		.cfi_startproc
+ 213              		@ args = 0, pretend = 0, frame = 0
+ 214              		@ frame_needed = 0, uses_anonymous_args = 0
+ 215              		@ link register save eliminated.
+  30:Src/stubs.c   ****     (void)uxQueueLength; (void)uxItemSize;
+ 216              		.loc 1 30 5 view .LVU44
+ 217              		.loc 1 30 26 view .LVU45
+  31:Src/stubs.c   ****     return (QueueHandle_t)0x20001000;
+ 218              		.loc 1 31 5 view .LVU46
+  32:Src/stubs.c   **** }
+ 219              		.loc 1 32 1 is_stmt 0 view .LVU47
+ 220 0000 0048     		ldr	r0, .L13
+ 221              	.LVL14:
+ 222              		.loc 1 32 1 view .LVU48
+ 223 0002 7047     		bx	lr
+ 224              	.L14:
+ 225              		.align	2
+ 226              	.L13:
+ 227 0004 00100020 		.word	536875008
+ 228              		.cfi_endproc
+ 229              	.LFE6:
+ 231              		.section	.text.xQueueSend,"ax",%progbits
+ 232              		.align	1
+ 233              		.global	xQueueSend
+ 234              		.syntax unified
+ 235              		.thumb
+ 236              		.thumb_func
+ 238              	xQueueSend:
+ 239              	.LVL15:
+ 240              	.LFB7:
+  33:Src/stubs.c   **** 
+  34:Src/stubs.c   **** int xQueueSend(QueueHandle_t xQueue, const void * const pvItemToQueue, TickType_t xTicksToWait) {
+ 241              		.loc 1 34 97 is_stmt 1 view -0
+ 242              		.cfi_startproc
+ 243              		@ args = 0, pretend = 0, frame = 0
+ 244              		@ frame_needed = 0, uses_anonymous_args = 0
+ 245              		@ link register save eliminated.
+  35:Src/stubs.c   ****     (void)xQueue; (void)pvItemToQueue; (void)xTicksToWait;
+ 246              		.loc 1 35 5 view .LVU50
+ 247              		.loc 1 35 19 view .LVU51
+ 248              		.loc 1 35 40 view .LVU52
+  36:Src/stubs.c   ****     return 1;
+ 249              		.loc 1 36 5 view .LVU53
+  37:Src/stubs.c   **** }
+ 250              		.loc 1 37 1 is_stmt 0 view .LVU54
+ 251 0000 0120     		movs	r0, #1
+ 252              	.LVL16:
+ 253              		.loc 1 37 1 view .LVU55
+ 254 0002 7047     		bx	lr
+ 255              		.cfi_endproc
+ 256              	.LFE7:
+ 258              		.section	.text.xQueueReceive,"ax",%progbits
+ 259              		.align	1
+ 260              		.global	xQueueReceive
+ 261              		.syntax unified
+ 262              		.thumb
+ARM GAS  /tmp/ccQGfAq3.s 			page 6
+
+
+ 263              		.thumb_func
+ 265              	xQueueReceive:
+ 266              	.LVL17:
+ 267              	.LFB8:
+  38:Src/stubs.c   **** 
+  39:Src/stubs.c   **** int xQueueReceive(QueueHandle_t xQueue, void * const pvBuffer, TickType_t xTicksToWait) {
+ 268              		.loc 1 39 89 is_stmt 1 view -0
+ 269              		.cfi_startproc
+ 270              		@ args = 0, pretend = 0, frame = 0
+ 271              		@ frame_needed = 0, uses_anonymous_args = 0
+ 272              		@ link register save eliminated.
+  40:Src/stubs.c   ****     (void)xQueue; (void)pvBuffer; (void)xTicksToWait;
+ 273              		.loc 1 40 5 view .LVU57
+ 274              		.loc 1 40 19 view .LVU58
+ 275              		.loc 1 40 35 view .LVU59
+  41:Src/stubs.c   ****     return 1;
+ 276              		.loc 1 41 5 view .LVU60
+  42:Src/stubs.c   **** }
+ 277              		.loc 1 42 1 is_stmt 0 view .LVU61
+ 278 0000 0120     		movs	r0, #1
+ 279              	.LVL18:
+ 280              		.loc 1 42 1 view .LVU62
+ 281 0002 7047     		bx	lr
+ 282              		.cfi_endproc
+ 283              	.LFE8:
+ 285              		.section	.text.xTaskCreate,"ax",%progbits
+ 286              		.align	1
+ 287              		.global	xTaskCreate
+ 288              		.syntax unified
+ 289              		.thumb
+ 290              		.thumb_func
+ 292              	xTaskCreate:
+ 293              	.LVL19:
+ 294              	.LFB9:
+  43:Src/stubs.c   **** 
+  44:Src/stubs.c   **** int xTaskCreate(void (*pvTaskCode)(void *), const char * const pcName, uint16_t usStackDepth, void 
+ 295              		.loc 1 44 184 is_stmt 1 view -0
+ 296              		.cfi_startproc
+ 297              		@ args = 8, pretend = 0, frame = 0
+ 298              		@ frame_needed = 0, uses_anonymous_args = 0
+ 299              		@ link register save eliminated.
+  45:Src/stubs.c   ****     (void)pvTaskCode; (void)pcName; (void)usStackDepth; (void)pvParameters; (void)uxPriority; (void
+ 300              		.loc 1 45 5 view .LVU64
+ 301              		.loc 1 45 23 view .LVU65
+ 302              		.loc 1 45 37 view .LVU66
+ 303              		.loc 1 45 57 view .LVU67
+ 304              		.loc 1 45 77 view .LVU68
+ 305              		.loc 1 45 95 view .LVU69
+  46:Src/stubs.c   ****     return 1;
+ 306              		.loc 1 46 5 view .LVU70
+  47:Src/stubs.c   **** }
+ 307              		.loc 1 47 1 is_stmt 0 view .LVU71
+ 308 0000 0120     		movs	r0, #1
+ 309              	.LVL20:
+ 310              		.loc 1 47 1 view .LVU72
+ 311 0002 7047     		bx	lr
+ 312              		.cfi_endproc
+ARM GAS  /tmp/ccQGfAq3.s 			page 7
+
+
+ 313              	.LFE9:
+ 315              		.section	.text.vTaskDelay,"ax",%progbits
+ 316              		.align	1
+ 317              		.global	vTaskDelay
+ 318              		.syntax unified
+ 319              		.thumb
+ 320              		.thumb_func
+ 322              	vTaskDelay:
+ 323              	.LVL21:
+ 324              	.LFB10:
+  48:Src/stubs.c   **** 
+  49:Src/stubs.c   **** void vTaskDelay(const TickType_t xTicksToDelay) {
+ 325              		.loc 1 49 49 is_stmt 1 view -0
+ 326              		.cfi_startproc
+ 327              		@ args = 0, pretend = 0, frame = 0
+ 328              		@ frame_needed = 0, uses_anonymous_args = 0
+ 329              		@ link register save eliminated.
+  50:Src/stubs.c   ****     (void)xTicksToDelay;
+ 330              		.loc 1 50 5 view .LVU74
+  51:Src/stubs.c   **** }
+ 331              		.loc 1 51 1 is_stmt 0 view .LVU75
+ 332 0000 7047     		bx	lr
+ 333              		.cfi_endproc
+ 334              	.LFE10:
+ 336              		.section	.bss.heap_end.0,"aw",%nobits
+ 337              		.align	2
+ 340              	heap_end.0:
+ 341 0000 00000000 		.space	4
+ 342              		.text
+ 343              	.Letext0:
+ 344              		.file 2 "/usr/lib/gcc/arm-none-eabi/14.2.1/include/stdint.h"
+ 345              		.file 3 "/usr/include/newlib/sys/types.h"
+ARM GAS  /tmp/ccQGfAq3.s 			page 8
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 stubs.c
+     /tmp/ccQGfAq3.s:19     .text._close:00000000 $t
+     /tmp/ccQGfAq3.s:25     .text._close:00000000 _close
+     /tmp/ccQGfAq3.s:44     .text._lseek:00000000 $t
+     /tmp/ccQGfAq3.s:50     .text._lseek:00000000 _lseek
+     /tmp/ccQGfAq3.s:71     .text._fstat:00000000 $t
+     /tmp/ccQGfAq3.s:77     .text._fstat:00000000 _fstat
+     /tmp/ccQGfAq3.s:97     .text._isatty:00000000 $t
+     /tmp/ccQGfAq3.s:103    .text._isatty:00000000 _isatty
+     /tmp/ccQGfAq3.s:122    .text._exit:00000000 $t
+     /tmp/ccQGfAq3.s:128    .text._exit:00000000 _exit
+     /tmp/ccQGfAq3.s:145    .text._sbrk:00000000 $t
+     /tmp/ccQGfAq3.s:151    .text._sbrk:00000000 _sbrk
+     /tmp/ccQGfAq3.s:196    .text._sbrk:0000001c $d
+     /tmp/ccQGfAq3.s:340    .bss.heap_end.0:00000000 heap_end.0
+     /tmp/ccQGfAq3.s:202    .text.xQueueCreate:00000000 $t
+     /tmp/ccQGfAq3.s:208    .text.xQueueCreate:00000000 xQueueCreate
+     /tmp/ccQGfAq3.s:227    .text.xQueueCreate:00000004 $d
+     /tmp/ccQGfAq3.s:232    .text.xQueueSend:00000000 $t
+     /tmp/ccQGfAq3.s:238    .text.xQueueSend:00000000 xQueueSend
+     /tmp/ccQGfAq3.s:259    .text.xQueueReceive:00000000 $t
+     /tmp/ccQGfAq3.s:265    .text.xQueueReceive:00000000 xQueueReceive
+     /tmp/ccQGfAq3.s:286    .text.xTaskCreate:00000000 $t
+     /tmp/ccQGfAq3.s:292    .text.xTaskCreate:00000000 xTaskCreate
+     /tmp/ccQGfAq3.s:316    .text.vTaskDelay:00000000 $t
+     /tmp/ccQGfAq3.s:322    .text.vTaskDelay:00000000 vTaskDelay
+     /tmp/ccQGfAq3.s:337    .bss.heap_end.0:00000000 $d
+
+UNDEFINED SYMBOLS
+end
